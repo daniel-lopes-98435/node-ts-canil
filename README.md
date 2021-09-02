@@ -5,4 +5,4 @@ Projeto criado no curso Node + Typescript da B7Wev
 ### Instalação das dependências
 `npm install express mustache-express dotenv`
 ### Instação dos type para as depencências
-`npm install --save-dev @types/express @types/mustache @types/node`
+`npm install --save-dev @types/express @types/mustache-express @types/node`

@@ -133,11 +133,20 @@ export const Pet = {
     getAll: ()=>{
         return data;
     },
-    getFromType: (type: Pettype)=>{
+    getFromType: (type: Pettype): Pet[] =>{
         return data.filter(item =>{
             if(item.type === type){
                 return true;
             } else{
+                return false;
+            }
+        })
+    },
+    getFromName: (name: string): Pet[] =>{
+        return data.filter(item =>{
+            if(item.name.toLocaleLowerCase().indexOf(name.toLowerCase()) > -1){
+                return true;
+            }else{
                 return false;
             }
         })
